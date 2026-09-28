@@ -1,0 +1,72 @@
+# ==============================================================================
+# .gitignore for GWAS Prediction Repository
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Input Data Folders & Sample Input Bundles
+# ------------------------------------------------------------------------------
+data/
+results/
+**/results/
+**/data/
+sample_inputs/
+**/sample_inputs/
+
+# ------------------------------------------------------------------------------
+# 2. Raw Genomic & PLINK Binary / Text Files
+# ------------------------------------------------------------------------------
+*.bed
+*.bim
+*.fam
+*.map
+*.ped
+*.raw
+*.gds
+*.nosex
+*.log
+
+# ------------------------------------------------------------------------------
+# 3. Raw Phenotype, Pedigree & Association Input Files
+# ------------------------------------------------------------------------------
+pedigree.txt
+Pedigree.csv
+Pedigree.xlsx
+phenotypes.csv
+pheno
+pheno.rds
+pheno. rds
+selected.txt
+selected.fam
+contigs.txt
+raw_file_names_original.txt
+wald_*.txt
+top_*_snps.txt
+geno_shrink.rds
+M
+hapmap
+toy.gds
+
+# ------------------------------------------------------------------------------
+# 4. R Session Artifacts, Workspaces & Large Datasets
+# ------------------------------------------------------------------------------
+*.RData
+*.rda
+*.Rhistory
+.RData
+.RData*
+.Rhistory*
+*.dat
+
+# ------------------------------------------------------------------------------
+# 5. OS & IDE System Files
+# ------------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.Rproj.user/
+.vscode/
+.idea/
